@@ -1,0 +1,4 @@
+db:
+  image: tigberd/reversal-database
+  ports:
+    - 3306:3306

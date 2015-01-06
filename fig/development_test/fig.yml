@@ -1,0 +1,11 @@
+web:
+  build: ../../
+  command: /entrypoint/development_test.sh
+  ports:
+    - '3000:3000'
+  links:
+    - db:db
+db:
+  image: tigberd/reversal-database
+  ports:
+    - '3306:3306'

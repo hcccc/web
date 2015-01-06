@@ -1,0 +1,10 @@
+/.bundle
+/vendor/bundle
+
+/db
+/log/*
+!/log/.keep
+/tmp
+
+/.idea
+/.vagrant

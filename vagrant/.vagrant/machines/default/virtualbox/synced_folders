@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/app":{"create":true,"owner":"vagrant","group":"vagrant","mount_options":["dmode=777,fmode=666"],"guestpath":"/home/vagrant/app","hostpath":"/Users/dionore/repos/github.com/ftg-reversal/web","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/dionore/repos/github.com/ftg-reversal/web/vagrant","disabled":false}}}
