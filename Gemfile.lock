@@ -279,6 +279,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    seed_dump (3.2.1)
+      activerecord (~> 4)
+      activesupport (~> 4)
     sexp_processor (4.4.4)
     shellany (0.0.1)
     simple_oauth (0.3.1)
@@ -372,6 +375,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails
   sdoc
+  seed_dump
   spring
   tapp
   therubyracer

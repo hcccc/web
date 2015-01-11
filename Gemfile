@@ -36,6 +36,7 @@ group :development do
   gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'quiet_assets'
+  gem 'seed_dump'
 
   gem 'web-console'
   gem 'tapp'
