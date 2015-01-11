@@ -5,6 +5,7 @@
 !/config/auth/.keep
 
 /db
+!/db/seeds.rb
 /log/*
 !/log/.keep
 /tmp
