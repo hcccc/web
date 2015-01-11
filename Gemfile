@@ -12,6 +12,7 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'twitter'
 
 gem 'turbolinks'
 gem 'jbuilder'

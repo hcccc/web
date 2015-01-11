@@ -1,6 +1,9 @@
 /.bundle
 /vendor/bundle
 
+/config/auth/*
+!/config/auth/.keep
+
 /db
 /log/*
 !/log/.keep
