@@ -1,5 +1,7 @@
-require "codeclimate-test-reporter"
+require 'webmock/rspec'
+require 'codeclimate-test-reporter'
 
+WebMock.disable_net_connect!(:allow => 'codeclimate.com')
 CodeClimate::TestReporter.start
 
 def fixture_path
