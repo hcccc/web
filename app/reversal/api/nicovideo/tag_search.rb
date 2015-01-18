@@ -20,7 +20,7 @@ module Api
 
         # @param tag [String]
         def rss_url(tag)
-          'http://www.nicovideo.jp/tag/' + tag + '?sort=f&rss=2.0'
+          "http://www.nicovideo.jp/tag/#{tag}?sort=f&rss=2.0"
         end
 
         # @param url [String]
