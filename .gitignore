@@ -1,6 +1,7 @@
 /.bundle
 /vendor/bundle
 
+/config/database.yml
 /config/auth/*
 !/config/auth/.keep
 
