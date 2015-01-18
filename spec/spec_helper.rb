@@ -2,9 +2,11 @@ require 'webmock/rspec'
 require 'coveralls'
 require 'codeclimate-test-reporter'
 
-WebMock.disable_net_connect!(:allow => ['coveralls.io', 'codeclimate.com'])
-Coveralls.wear!
-CodeClimate::TestReporter.start
+formatters = [SimpleCov::Formatter::HTMLFormatter]
+formatters << Coveralls::SimpleCov::Formatter if ENV['COVERALLS_REPO_TOKEN']
+formatters << CodeClimate::TestReporter::Formatter if ENV['CODECLIMATE_REPO_TOKEN']
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[*formatters]
 
 def fixture_path
   File.expand_path("../fixtures", __FILE__)
