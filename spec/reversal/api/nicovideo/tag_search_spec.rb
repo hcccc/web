@@ -12,12 +12,12 @@ module Api
         end
 
         it 'XMLに含まれている数の動画情報が取得できること' do
-          expect(Api::Nicovideo::TagSearch.exec('hoge').length).to eq 2
+          expect(TagSearch.exec('hoge').length).to eq 2
         end
 
         context '取得された1件目の動画について' do
           before do
-            @video = Api::Nicovideo::TagSearch.exec('hoge').first
+            @video = TagSearch.exec('hoge').first
           end
 
           it 'URLが正しいこと' do
@@ -36,7 +36,7 @@ module Api
 
       describe 'private' do
         it 'tagに応じたRSSのURLが取得できること' do
-          expect(Api::Nicovideo::TagSearch.send(:rss_url, 'hoge')).to(
+          expect(TagSearch.send(:rss_url, 'hoge')).to(
               eq 'http://www.nicovideo.jp/tag/hoge?sort=f&rss=2.0')
         end
       end
