@@ -1,3 +1,7 @@
+require "codeclimate-test-reporter"
+
+CodeClimate::TestReporter.start
+
 def fixture_path
   File.expand_path("../fixtures", __FILE__)
 end
