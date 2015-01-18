@@ -4,7 +4,7 @@ require 'webmock/rspec'
 module Api
   module Nicovideo
     describe TagSearch do
-      describe '#exec' do
+      describe '.exec' do
         # RSSへのアクセスをWebMockに差し替え
         before do
           WebMock.stub_request(:any, "http://www.nicovideo.jp/tag/hoge?sort=f&rss=2.0")
