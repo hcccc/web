@@ -1,4 +1,9 @@
-FROM ruby:2.2
+FROM tigberd/reversal-ruby
+
+RUN apt-get update && \
+      apt-get install -y --no-install-recommends \
+        libmysqlclient-dev && \
+      apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
