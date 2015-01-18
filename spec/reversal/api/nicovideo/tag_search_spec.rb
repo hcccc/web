@@ -5,6 +5,7 @@ module Api
   module Nicovideo
     describe TagSearch do
       describe '#exec' do
+        # RSSへのアクセスをWebMockに差し替え
         before do
           WebMock.stub_request(:any, "http://www.nicovideo.jp/tag/hoge?sort=f&rss=2.0")
               .to_return({status: 200, body: fixture('reversal/api/nicovideo/tag_search.xml')})
