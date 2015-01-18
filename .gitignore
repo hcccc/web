@@ -5,6 +5,8 @@
 /config/auth/*
 !/config/auth/.keep
 
+/coverage
+
 /db
 !/db/seeds.rb
 /log/*
