@@ -3,6 +3,8 @@ require 'coveralls'
 require 'codeclimate-test-reporter'
 
 formatters = [SimpleCov::Formatter::HTMLFormatter]
+
+WebMock.disable_net_connect!(:allow => ['coveralls.io', 'codeclimate.com'])
 formatters << Coveralls::SimpleCov::Formatter if ENV['COVERALLS_REPO_TOKEN']
 formatters << CodeClimate::TestReporter::Formatter if ENV['CODECLIMATE_REPO_TOKEN']
 
