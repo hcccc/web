@@ -6,10 +6,11 @@ rvm:
 before_script:
   - cp config/database.travis.yml config/database.yml
   - mysql -e 'create database reversal_test;'
+  - wget https://raw.githubusercontent.com/ftg-reversal/migration/master/config.travis.yml
   - wget https://raw.githubusercontent.com/ftg-reversal/migration/master/Schemafile
 
 script:
-  - bundle exec ridgepole -c config/database.yml --apply
+  - bundle exec ridgepole -c config.travis.yml --apply
   - bundle exec rspec spec
 
 cache: bundler
