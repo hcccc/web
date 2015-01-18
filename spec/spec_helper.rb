@@ -27,4 +27,8 @@ RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end
+
+  RSpec.configure do |config|
+    config.include FactoryGirl::Syntax::Methods
+  end
 end
