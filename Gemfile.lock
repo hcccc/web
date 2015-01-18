@@ -64,6 +64,8 @@ GEM
       activerecord (>= 3.2)
     code_analyzer (0.4.5)
       sexp_processor
+    codeclimate-test-reporter (0.4.5)
+      simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -81,6 +83,7 @@ GEM
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
+    docile (1.1.5)
     dotenv (1.0.2)
     dotenv-rails (1.0.2)
       dotenv (= 1.0.2)
@@ -290,6 +293,11 @@ GEM
     sexp_processor (4.4.4)
     shellany (0.0.1)
     simple_oauth (0.3.1)
+    simplecov (0.9.1)
+      docile (~> 1.1.0)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.8.0)
+    simplecov-html (0.8.0)
     slop (3.6.0)
     spring (1.2.0)
     spring-commands-rspec (1.0.4)
@@ -358,6 +366,7 @@ DEPENDENCIES
   bootstrap-sass
   bullet
   classy_enum
+  codeclimate-test-reporter
   coffee-rails
   database_cleaner
   dotenv-rails
