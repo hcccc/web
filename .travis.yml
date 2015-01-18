@@ -1,4 +1,6 @@
 language: ruby
+cache: bundler
+bundler_args: --without production --deployment
 
 rvm:
   - 2.2.0
@@ -12,5 +14,3 @@ before_script:
 script:
   - bundle exec ridgepole -c config.travis.yml --apply
   - bundle exec rspec spec
-
-cache: bundler
