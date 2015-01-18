@@ -57,5 +57,5 @@ group :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'webmock'
-  gem 'codeclimate-test-reporter'
+  gem 'coveralls'
 end

@@ -1,8 +1,8 @@
 require 'webmock/rspec'
-require 'codeclimate-test-reporter'
+require 'coveralls'
 
-WebMock.disable_net_connect!(:allow => 'codeclimate.com')
-CodeClimate::TestReporter.start
+WebMock.disable_net_connect!(:allow => 'coveralls.io')
+Coveralls.wear!
 
 def fixture_path
   File.expand_path("../fixtures", __FILE__)
