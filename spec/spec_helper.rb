@@ -1,3 +1,4 @@
+require 'factory_girl'
 require 'webmock/rspec'
 require 'coveralls'
 require 'codeclimate-test-reporter'
