@@ -3,7 +3,7 @@ module Service
     class << self
       # @param game [Game]
       # @return [Array<Video>]
-      def self.find_by_game(game)
+      def find_by_game(game)
         game.search_conditions.flat_map do |condition|
           find_by_condition(condition)
         end
