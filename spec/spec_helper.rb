@@ -10,7 +10,6 @@ formatters << CodeClimate::TestReporter::Formatter if ENV['CODECLIMATE_REPO_TOKE
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[*formatters]
 SimpleCov.start 'rails'
-CodeClimate::TestReporter.start if ENV['CODECLIMATE_REPO_TOKEN']
 
 def fixture_path
   File.expand_path("../fixtures", __FILE__)
